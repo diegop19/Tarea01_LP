@@ -1,21 +1,25 @@
-import { useEffect, useState } from "react";
-import axios from "axios";
+// App.js
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import HomePage from './pages/HomePage'; // Página de inicio
+import GamePage from './pages/GamePage'; // Página de juego
+import ResultPage from './pages/ResultPage.js'; // Página de resultados
 
 function App() {
-    const [mensaje, setMensaje] = useState("");
+  return (
+    <Router>
+      <Routes>
+        {/* Ruta para la home page */}
+        <Route path="/" element={<HomePage />} />
 
-    useEffect(() => {
-        axios.get("http://localhost:5000")
-            .then(response => setMensaje(response.data))
-            .catch(error => console.error("Error al obtener datos", error));
-    }, []);
+        {/* Ruta para la página de juego */}
+        <Route path="/game" element={<GamePage />} />
 
-    return (
-        <div>
-            <h1>React y Express</h1>
-            <p>{mensaje}</p>
-        </div>
-    );
+        {/* Ruta para la página de resultados */}
+        <Route path="/results" element={<ResultPage />} />
+      </Routes>
+    </Router>
+  );
 }
 
 export default App;

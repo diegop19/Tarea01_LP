@@ -1,0 +1,46 @@
+/* Estilos para el contenedor principal */
+.home-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Ocupa toda la altura de la pantalla */
+    background-color: #f0f0f0; /* Color de fondo */
+    font-family: Arial, sans-serif; /* Fuente */
+  }
+  
+  /* Estilos para el título */
+  .home-title {
+    font-size: 2.5rem;
+    color: #333; /* Color del texto */
+    margin-bottom: 20px;
+  }
+  
+  /* Estilos para los inputs */
+  .home-input {
+    width: 300px;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  /* Estilos para el botón */
+  .home-button {
+    width: 320px;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: #007bff; /* Color de fondo del botón */
+    color: white; /* Color del texto del botón */
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Efecto hover para el botón */
+  .home-button:hover {
+    background-color: #0056b3; /* Cambia el color al pasar el mouse */
+  }

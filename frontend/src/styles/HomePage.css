@@ -5,15 +5,15 @@
     align-items: center;
     justify-content: center;
     height: 100vh; /* Ocupa toda la altura de la pantalla */
-    background-color: #f0f0f0; /* Color de fondo */
-    font-family: Arial, sans-serif; /* Fuente */
+    background-color: #1f242e; /* Color de fondo */
   }
   
   /* Estilos para el título */
   .home-title {
     font-size: 2.5rem;
-    color: #333; /* Color del texto */
+    color: #e2dccf; /* Color del texto */
     margin-bottom: 20px;
+    font-family: 'helpMe';
   }
   
   /* Estilos para los inputs */
@@ -23,7 +23,8 @@
     margin: 10px 0;
     border: 1px solid #ccc;
     border-radius: 5px;
-    font-size: 1rem;
+    font-size: 1.3rem;
+    font-family: 'chalkFont';
   }
   
   /* Estilos para el botón */
@@ -31,13 +32,14 @@
     width: 320px;
     padding: 10px;
     margin-top: 20px;
-    background-color: #007bff; /* Color de fondo del botón */
-    color: white; /* Color del texto del botón */
+    background-color: #e2dccf; /* Color de fondo del botón */
+    color: #1f242e; /* Color del texto del botón */
     border: none;
     border-radius: 5px;
-    font-size: 1rem;
+    font-size: 1.3rem;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    font-family: 'chalkFont';
   }
   
   /* Efecto hover para el botón */

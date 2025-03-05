@@ -1,0 +1,14 @@
+/* src/styles/fonts.css */
+@font-face {
+    font-family: 'helpMe'; /* Nombre que usarás para referirte a la fuente */
+    src: url('../fonts/HelpMe.ttf') format('truetype'); /* Ruta al archivo de la fuente */
+    font-weight: normal; /* Peso de la fuente (normal, bold, etc.) */
+    font-style: normal; /* Estilo de la fuente (normal, italic, etc.) */
+  }
+
+  @font-face {
+    font-family: 'chalkFont'; /* Nombre que usarás para referirte a la fuente */
+    src: url('../fonts/Chalk\ Board.ttf') format('truetype'); /* Ruta al archivo de la fuente */
+    font-weight: normal; /* Peso de la fuente (normal, bold, etc.) */
+    font-style: normal; /* Estilo de la fuente (normal, italic, etc.) */
+  }

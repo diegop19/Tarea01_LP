@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import "../styles/HomePage.css"; 
 import axios from 'axios'; 
+import "../styles/HomePage.css"; 
 
 const HomePage = () => {
   const [player1, setPlayer1] = useState("");
@@ -22,7 +22,7 @@ const HomePage = () => {
       });
 
       if (response.data.message) {
-        navigate('/game');
+        navigate('/game', { state: { gameId: response.data.gameId,player1,player2 } });
       }
     } catch (error) {
       setError('Error al iniciar la partida. Inténtalo de nuevo.');
@@ -30,12 +30,10 @@ const HomePage = () => {
     }
   };
 
-
-  
-
   return (
     <div className="home-container">
       <h1 className="home-title">Juego del Ahorcado</h1>
+      {error && <p className="error-message">{error}</p>} {/* Muestra errores */}
       <input
         type="text"
         placeholder="Jugador 1"

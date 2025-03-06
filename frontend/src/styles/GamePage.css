@@ -1,0 +1,65 @@
+/* Estilos para el contenedor principal */
+.game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Centra el contenido verticalmente */
+    height: 100vh; /* Ocupa toda la altura de la pantalla */
+    background-color: #1f242e; /* Color de fondo oscuro */
+    font-family: Arial, sans-serif;
+    padding-top: 80px; /* Espacio para el título */
+  }
+  
+  /* Estilos para el título de la página */
+  .game-title {
+    position: fixed; 
+    top: 0; 
+    left: 0;
+    width: 100%; 
+    font-size: 2.5rem;
+    color: #e2dccf; 
+    text-align: center; 
+    padding: 20px 0; 
+    background-color: #1f242e; 
+    z-index: 1000; 
+    font-family: 'helpMe'; 
+  }
+  
+  /* Contenedor para las áreas de los jugadores */
+  .players-container {
+    display: flex;
+    justify-content: space-between;
+    width: 80%; 
+    max-width: 1200px; 
+    margin-top: 20px; 
+  }
+  
+  /* Estilos para el área de cada jugador */
+  .player-area {
+    width: 45%;
+    padding: 20px;
+    background-color: #e2dccf;
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    text-align: center;
+  }
+  
+  /* Estilos para el título de cada jugador */
+  .player-title {
+    font-size: 1.8rem;
+    color: #1f242e; 
+    margin-bottom: 20px;
+    font-family: 'chalkFont'; 
+  }
+  
+  /* Estilos para el espacio de la palabra a adivinar */
+  .word-display {
+    height: 100px; 
+    background-color: #e9ecef; 
+    border-radius: 5px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    color: #333; 
+  }

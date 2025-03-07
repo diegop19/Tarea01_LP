@@ -1,54 +1,71 @@
 [
   {
     "id": 1,
-    "player1": "diego",
-    "player2": "zx",
-    "player1Word": "backend",
-    "player2Word": "desarrollo",
-    "guessedLetters": [],
-    "currentPlayer": "diego",
-    "incorrectAttempts": 0,
+    "jugador1": {
+      "nombre": "Diego",
+      "palabra": "backend",
+      "letrasAdivinadas": [],
+      "intentosIncorrectos": 0,
+      "inicio": "2025-03-07T00:09:16.964Z",
+      "fin": null
+    },
+    "jugador2": {
+      "nombre": "Sol",
+      "palabra": "ahorcado",
+      "letrasAdivinadas": [],
+      "intentosIncorrectos": 0,
+      "inicio": "2025-03-07T00:09:16.964Z",
+      "fin": null
+    },
+    "currentPlayer": "Diego",
     "status": "in_progress",
-    "startTime": "2025-03-05T23:56:37.557Z",
+    "startTime": "2025-03-07T00:09:16.964Z",
     "endTime": null
   },
   {
     "id": 2,
-    "player1": "Sol",
-    "player2": "yi",
-    "player1Word": "programacion",
-    "player2Word": "ahorcado",
-    "guessedLetters": [],
-    "currentPlayer": "Sol",
-    "incorrectAttempts": 0,
+    "jugador1": {
+      "nombre": "d",
+      "palabra": "ahorcado",
+      "letrasAdivinadas": [],
+      "intentosIncorrectos": 0,
+      "inicio": "2025-03-07T03:10:14.204Z",
+      "fin": null
+    },
+    "jugador2": {
+      "nombre": "d",
+      "palabra": "express",
+      "letrasAdivinadas": [],
+      "intentosIncorrectos": 0,
+      "inicio": "2025-03-07T03:10:14.204Z",
+      "fin": null
+    },
+    "currentPlayer": "d",
     "status": "in_progress",
-    "startTime": "2025-03-05T23:57:11.278Z",
+    "startTime": "2025-03-07T03:10:14.204Z",
     "endTime": null
   },
   {
     "id": 3,
-    "player1": "Diego",
-    "player2": "Leo",
-    "player1Word": "backend",
-    "player2Word": "backend",
-    "guessedLetters": [],
-    "currentPlayer": "Diego",
-    "incorrectAttempts": 0,
+    "jugador1": {
+      "nombre": "Diego",
+      "palabra": "web",
+      "letrasAdivinadas": [],
+      "intentosIncorrectos": 0,
+      "inicio": "2025-03-07T03:16:23.299Z",
+      "fin": null
+    },
+    "jugador2": {
+      "nombre": "Sol",
+      "palabra": "backend",
+      "letrasAdivinadas": [],
+      "intentosIncorrectos": 0,
+      "inicio": "2025-03-07T03:16:23.299Z",
+      "fin": null
+    },
+    "currentPlayer": "Sol",
     "status": "in_progress",
-    "startTime": "2025-03-06T02:43:46.109Z",
-    "endTime": null
-  },
-  {
-    "id": 4,
-    "player1": "Diego",
-    "player2": "Sol",
-    "player1Word": "react",
-    "player2Word": "programacion",
-    "guessedLetters": [],
-    "currentPlayer": "Diego",
-    "incorrectAttempts": 0,
-    "status": "in_progress",
-    "startTime": "2025-03-06T03:01:30.939Z",
+    "startTime": "2025-03-07T03:16:23.299Z",
     "endTime": null
   }
 ]

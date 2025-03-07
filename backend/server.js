@@ -1,6 +1,7 @@
 const express = require('express');
 const cors = require('cors');
 const fs = require('fs');
+const Jugador = require('./Jugador');
 const app = express();
 const port = 5000;
 
@@ -55,21 +56,24 @@ app.post('/api/start-game', (req, res) => {
     }
   }
 
+  
+  // Crea instancias de Jugador para cada jugador
+  const jugador1 = new Jugador(player1);
+  const jugador2 = new Jugador(player2);
 
-  // Asigna una palabra diferente a cada jugador
-  const player1Word = getRandomWord();
-  const player2Word = getRandomWord();
+   // Asigna una palabra diferente a cada jugador
+   jugador1.asignarPalabra(getRandomWord());
+   jugador2.asignarPalabra(getRandomWord());
+  
+   // Elige al azar quién comienza la partida
+  const jugadorInicial = Math.random() < 0.5 ? player1 : player2;
 
-  // Crea una nueva partida
+ // Crea una nueva partida
   const newGame = {
     id: games.length + 1, // ID único para la partida
-    player1,
-    player2,
-    player1Word,
-    player2Word,
-    guessedLetters: [], // Letras adivinadas
-    currentPlayer: player1, // El jugador 1 comienza
-    incorrectAttempts: 0, // Intentos incorrectos
+    jugador1,
+    jugador2,
+    currentPlayer: jugadorInicial, // El jugador 1 comienza
     status: 'in_progress', // Estado de la partida
     startTime: new Date().toISOString(), // Fecha de inicio
     endTime: null, // Fecha de finalización
@@ -91,6 +95,8 @@ app.post('/api/start-game', (req, res) => {
     currentPlayer: newGame.currentPlayer,
   });
 });
+
+
 
 // Inicia el servidor
 app.listen(port, () => {

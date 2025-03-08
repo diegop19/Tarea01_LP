@@ -4,8 +4,7 @@ class Jugador {
       this.palabra = ''; 
       this.letrasAdivinadas = []; 
       this.intentosIncorrectos = 0; 
-      this.inicio = new Date().toISOString(); 
-      this.fin = null; 
+      this.tiempoEfectivo = 0;
     }
    
     asignarPalabra(palabra) {

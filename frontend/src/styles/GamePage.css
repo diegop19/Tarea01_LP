@@ -68,11 +68,20 @@
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  margin: 5px;
 }
 
 /* Efecto hover para los botones del teclado */
-.keyboard button:hover {
+.keyboard button:hover:not(:disabled) {
   background-color: #0056b3;
+  color: #fff;
+}
+
+/* Estilo para letras ya seleccionadas */
+.keyboard button.selected {
+  text-decoration: line-through; 
+  background-color: #ccc; 
+  cursor: not-allowed; 
 }
 
 /* Deshabilitar botones del teclado */
@@ -102,4 +111,141 @@
 /* Efecto hover para el botón de volver al inicio */
 .game-over button:hover {
   background-color: #0056b3;
+}
+
+/* Estilos para el modal */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal {
+  background-color: #2a303d;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.modal h2 {
+  color: #e2dccf;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+/* Estilos para el contador de turnos restantes */
+.turn-counter {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #2a303d;
+  color: #e2dccf;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 1.7rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Asegúrate de que el área del jugador tenga posición relativa */
+.player-area {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 45%;
+  padding: 20px;
+  border: 2px solid #e2dccf;
+  border-radius: 10px;
+  background-color: #2a303d;
+}
+
+/* Estilos para el contador de tiempo efectivo */
+.time-counter {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: #2a303d;
+  color: #e2dccf;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 1.7rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Asegúrate de que el área del jugador tenga posición relativa */
+.player-area {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 45%;
+  padding: 20px;
+  border: 2px solid #e2dccf;
+  border-radius: 10px;
+  background-color: #2a303d;
+}
+
+/* Estilos para el modal de resultados */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal {
+  background-color: #2a303d;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  width: 100%;
+}
+
+.modal h2 {
+  color: #e2dccf;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.results-info {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.results-info p {
+  margin: 10px 0;
+  color: #e2dccf;
+  font-size: 1.1rem;
+}
+
+.modal-button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #e2dccf;
+  color: #1f242e;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.modal-button:hover {
+  background-color: #0056b3;
+  color: #fff;
 }

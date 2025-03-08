@@ -4,14 +4,14 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh; /* Ocupa toda la altura de la pantalla */
-    background-color: #1f242e; /* Color de fondo */
+    height: 100vh; 
+    background-color: #1f242e; 
   }
   
   /* Estilos para el título */
   .home-title {
-    font-size: 2.5rem;
-    color: #e2dccf; /* Color del texto */
+    font-size: 3rem;
+    color: #e2dccf; 
     margin-bottom: 20px;
     font-family: 'helpMe';
   }
@@ -23,7 +23,7 @@
     margin: 10px 0;
     border: 1px solid #ccc;
     border-radius: 5px;
-    font-size: 1.3rem;
+    font-size: 2rem;
     font-family: 'chalkFont';
   }
   
@@ -32,11 +32,11 @@
     width: 320px;
     padding: 10px;
     margin-top: 20px;
-    background-color: #e2dccf; /* Color de fondo del botón */
-    color: #1f242e; /* Color del texto del botón */
+    background-color: #e2dccf; 
+    color: #1f242e; 
     border: none;
     border-radius: 5px;
-    font-size: 1.3rem;
+    font-size: 2rem;
     cursor: pointer;
     transition: background-color 0.3s ease;
     font-family: 'chalkFont';
@@ -44,5 +44,25 @@
   
   /* Efecto hover para el botón */
   .home-button:hover {
-    background-color: #0056b3; /* Cambia el color al pasar el mouse */
+    background-color: #0056b3; 
   }
+/* Estilos para el botón de historial en HomePage */
+.history-button {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  padding: 10px 20px;
+  font-size: 2rem;
+  background-color: #e2dccf;
+  color: #1f242e;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-family: 'chalkFont';
+}
+
+.history-button:hover {
+  background-color: #0056b3;
+  color: #fff;
+}

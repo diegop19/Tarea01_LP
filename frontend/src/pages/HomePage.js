@@ -22,7 +22,15 @@ const HomePage = () => {
       });
 
       if (response.data.message) {
-        navigate('/game', { state: { gameId: response.data.gameId,player1,player2 } });
+        // Pasa los datos de los jugadores a GamePage
+        navigate('/game', {
+          state: {
+            gameId: response.data.gameId,
+            currentPlayer: response.data.currentPlayer,
+            jugador1: response.data.jugador1,
+            jugador2: response.data.jugador2,
+          },
+        });
       }
     } catch (error) {
       setError('Error al iniciar la partida. Inténtalo de nuevo.');
@@ -32,8 +40,14 @@ const HomePage = () => {
 
   return (
     <div className="home-container">
+      <button
+        className="history-button"
+        onClick={() => navigate('/results')}
+      >
+        Ver Historial de Partidas
+      </button>
       <h1 className="home-title">Juego del Ahorcado</h1>
-      {error && <p className="error-message">{error}</p>} {/* Muestra errores */}
+      {error && <p className="error-message">{error}</p>} 
       <input
         type="text"
         placeholder="Jugador 1"
